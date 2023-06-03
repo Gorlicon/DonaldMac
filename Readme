@@ -1,0 +1,29 @@
+
+1. Struktura aplikacji:
+    - main.py: główny plik wywołujący order
+    - food_builder.py: plik zawierający etapy przygotowywania jedzenia
+    - food_item.py: plik zawierający defnicję klas, które dziedziczą po FoodItem
+    - order.py: plik odpowiada za całą obsługę procesu zamawiania. Pobiera dane z menu.py
+    - menu.py: plik zawierający menu dostępnych produktów oraz ich strukturę.
+    - test_order.py - zawiera testy elementów aplikacji
+
+2. Scenariusze testów:
+    test_cheeseburger - testuje zamawianie cheesburgera
+    test_fries - testuje zamawianie średnich frytek
+    test_salads - testuje zamawianie saładki cezar
+    test_nuggetsy - testuje zamawianie 20 nuggetsów
+    test_automatic - testuje automatyczne zamawianie produktu przez test przez wprowadzanie zmiennych
+                     (w tym wypadku znowu cheeseburger)
+    test_invalid - testuje zabezpieczenie przed wprowadzenmiem nieprawidłowych danych
+    test_order3 - testuje zamówienie 3 produktów\
+
+3. Wykorzystane nardzędzia i bilioteki:
+    Język programowania: Python
+    Środowisko: PyCharm
+    Biblioteki: time, unittest, io
+
+4. Ewnetualne problemy i ich rozwiązania:
+   za dużo aby opisać, ale przykładowe to:
+    - użytkownik mógł wprowadzić złą dane co prowadziło do errora i "wywalenia aplikacji"
+    - Produkty nie były dodawane do zamówienia
+    - zamówienie nie wyświetlało się
